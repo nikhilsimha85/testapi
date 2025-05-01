@@ -5,7 +5,7 @@ h11
 httptools
 pydantic
 python-dotenv
-
+"fastapi[standard]"
 starlette
 typing-extensions
 uvicorn
