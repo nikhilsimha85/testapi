@@ -5,7 +5,7 @@ from domain.tvarv import tvarv
 router = APIRouter()
 
 @router.get("/", tags=["tvarv"], response_model=list[str])
-def get_tvarv(im_param_names:list[str],im_skip_non_buf:bool) -> list[str]:
+def get_tvarv(im_param_names:str,im_skip_non_buf:bool, ex_values:str) -> list[str]:
     res = []
     res.append("CALL METHOD zcl_parameters=>get_all_variables")
     res.append("EXPORTING")
