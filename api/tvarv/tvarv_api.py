@@ -8,12 +8,5 @@ def get_tvarv(im_skip_non_buf:str="True", im_param_names:str="lt_params", ex_val
         val = True
     else:
         val = False
-    return(
-    f'''CALL METHOD zcl_parameters=>get_all_variables
-    EXPORTING
-    im_param_names  = {im_param_names}
-    im_skip_non_buf = {val}
-    IMPORTING
-    ex_values       = {ex_values}'''
-    )
+    return val
 
