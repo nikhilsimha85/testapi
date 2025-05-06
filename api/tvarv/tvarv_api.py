@@ -1,7 +1,5 @@
 from fastapi import APIRouter
 
-from domain.tvarv import tvarv
-
 router = APIRouter()
 
 @router.get("/", tags=["tvarv"], response_model=str)
