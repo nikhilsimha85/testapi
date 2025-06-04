@@ -12,9 +12,9 @@ def get_tvarv(im_params: Annotated[str, Query( title = "list of paramater names 
     return(
     f'''CALL METHOD zcl_parameters=>get_all_variables
     EXPORTING
-    im_param_names  = {im_params}
-    im_skip_non_buf = {im_skip_buf}
+    im_param_names  = 
+    im_skip_non_buf = 
     IMPORTING
-    ex_values       = {ex_out}'''
+    ex_values       = '''
     )
 
