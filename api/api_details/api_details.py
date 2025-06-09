@@ -20,7 +20,7 @@ def get_method_details(
             "direction": "Importing",
             "type": "ZDS_APPID",
             "default_value": "90",
-            "required": false,
+            "required": False,
             "description": "DS ID of the Application"
         },
         {
@@ -34,14 +34,14 @@ def get_method_details(
                     "COLLATERAL_SUB_TYPE": "string"
                 }
             },
-            "required": false,
+            "required": False,
             "description": "Message header containing subject and other details"
         },
         {
             "name": "IM_PAYLOAD",
             "direction": "Importing",
             "type": "ANY",
-            "required": false,
+            "required": False,
             "description": "Custom payload with information of field values to be sent in the email"
         },
         {
@@ -54,7 +54,7 @@ def get_method_details(
                     "OTF_CONTENT": "string"
                 }
             },
-            "required": false,
+            "required": False,
             "description": "Attachments to be included in the email"
         },
         {
@@ -83,7 +83,7 @@ def get_method_details(
                     }
                 }
             },
-            "required": false,
+            "required": False,
             "description": "Email address to which the email will be sent"
         }
     ],
@@ -92,7 +92,7 @@ def get_method_details(
             "name": "EX_RESPONSE_HDR",
             "direction": "Exporting",
             "type": "ZSESP_RESPONSE_HDR",
-            "required": false,
+            "required": False,
             "description": "Response header containing status and message"
         }
     ]
@@ -123,7 +123,7 @@ def get_all_method_details(
                         "NAME": "CHAR(50)"
                     }
                 },
-                "required": true,
+                "required": True,
                 "description": "Variable names to be retrieved from TVARVC"
             },
             {
@@ -131,7 +131,7 @@ def get_all_method_details(
                 "direction": "Importing",
                 "type": "BOOLE_D",
                 "default_value": "abap_true",
-                "required": false,
+                "required": False,
                 "description": "Whether to Skip Non Buffered Table"
             }
         ],
@@ -150,7 +150,7 @@ def get_all_method_details(
                         "HIGH": "CHAR(80)"
                     }
                 },
-                "required": true,
+                "required": True,
                 "description": "Table containing the variable names and their values"
             }
         ]
@@ -164,7 +164,7 @@ def get_all_method_details(
                 "name": "IM_PARAM_NAME",
                 "direction": "Importing",
                 "type": "CHAR(50)",
-                "required": true,
+                "required": True,
                 "description": "Variable name to be retrieved from TVARVC"
             }
         ],
@@ -183,7 +183,7 @@ def get_all_method_details(
                         "HIGH": "CHAR(80)"
                     }
                 },
-                "required": true,
+                "required": True,
                 "description": "Table containing the variable names and their values"
             }
         ]
